@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Jump-SoundBible.com-1007297584.wav-14fcc12b92d1604400e9d5f38432a7d5.sample"
+
+[deps]
+
+source_file="res://Assets/Jump-SoundBible.com-1007297584.wav"
+dest_files=[ "res://.import/Jump-SoundBible.com-1007297584.wav-14fcc12b92d1604400e9d5f38432a7d5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Markalo goes to the disco.ogg-91f03bbf9cd2192cfc1fa9c52a2c136d.oggstr"
+
+[deps]
+
+source_file="res://Assets/Markalo goes to the disco.ogg"
+dest_files=[ "res://.import/Markalo goes to the disco.ogg-91f03bbf9cd2192cfc1fa9c52a2c136d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

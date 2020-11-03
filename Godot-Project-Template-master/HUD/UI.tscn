@@ -1,0 +1,105 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
+[ext_resource path="res://HUD/Menu.gd" type="Script" id=2]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="HUD" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="HUD"]
+margin_right = 1024.0
+margin_bottom = 20.0
+color = Color( 0, 0, 0, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lives" type="Label" parent="HUD"]
+margin_left = 10.0
+margin_right = 522.0
+margin_bottom = 20.0
+text = "Lives"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="HUD"]
+margin_left = 498.652
+margin_right = 1010.65
+margin_bottom = 20.0
+text = "Score"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Health" type="Label" parent="HUD"]
+margin_left = -30.7014
+margin_right = 993.299
+margin_bottom = 20.0
+text = "Health"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="Control" parent="."]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.498039 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Save and Load" type="Label" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -131.0
+text = "Save and Load"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Save" type="Button" parent="Menu"]
+margin_left = 462.0
+margin_top = 300.0
+margin_right = 562.0
+margin_bottom = 350.0
+text = "Save"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Load" type="Button" parent="Menu"]
+margin_left = 462.0
+margin_top = 370.0
+margin_right = 562.0
+margin_bottom = 420.0
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Menu/Save" to="Menu" method="_on_Save_pressed"]
+[connection signal="pressed" from="Menu/Load" to="Menu" method="_on_Load_pressed"]
